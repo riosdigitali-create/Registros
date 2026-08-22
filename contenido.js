@@ -60,8 +60,8 @@ const CONTENIDO = {
      ========================================================== */
   portada: {
     titulo: "Registro de un<br>Amar Salvaje",
-    subtitulo: "Lo extraordinario en lo simple, el detalle.",
-    firma: "por Adriana A. Antequera Salas",
+    subtitulo: "Lo extraordinario no está en otra parte. Está aquí, en lo que pocos notan.",
+    firma: "Por Adriana A. Antequera Salas",
     boton: "Quiero contar mi historia",
     /* Imagen de fondo mientras no haya video. */
     imagen: "img/portada.jpg",
@@ -288,14 +288,14 @@ const CONTENIDO = {
      ========================================================== */
   laboratorio: {
     items: [
-      { titulo: "Podcast",              texto: "Conversaciones sobre creación, memoria y territorio." },
-      { titulo: "Entrevistas",          texto: "Voces de artistas y personas que miran distinto." },
-      { titulo: "Ciclos de cine",       texto: "Programación y cine casero para compartir." },
-      { titulo: "Talleres",             texto: "Formación en fotografía, video y narrativa." },
-      { titulo: "Formación",            texto: "Acompañamiento a quienes empiezan a contar." },
-      { titulo: "Conversatorios",       texto: "Encuentros para pensar juntos la imagen." },
-      { titulo: "Asesorías artísticas", texto: "Guía para proyectos en desarrollo." },
-      { titulo: "Cine casero",          texto: "Rescatar lo íntimo y volverlo relato." },
+      { titulo: "Podcast",          texto: "Conversaciones con gente de a pie. Personas extraordinarias con preguntas cotidianas, o personas comunes haciéndose preguntas profundas." },
+      { titulo: "Entrevistas",      texto: "Voces de quienes habitan el mundo y el oficio con una mirada distinta." },
+      { titulo: "Ciclos de cine",   texto: "Programación seleccionada y proyecciones de cine casero para encontrarnos a mirar juntos." },
+      { titulo: "Talleres",         texto: "Espacios de práctica, ensayo y reflexión alrededor del sonido, la fotografía, la imagen en movimiento y la palabra. Sin fórmulas, desde el hacer." },
+      { titulo: "Formación",        texto: "Acompañamiento cercano a quienes están empezando a buscar y dar forma a su propia voz." },
+      { titulo: "Conversatorios",   texto: "Encuentros abiertos para pensar juntos la época, lo que vemos y lo que nos atraviesa." },
+      { titulo: "Asesorías",        texto: "Guía y escucha atenta para proyectos visuales y narrativos en desarrollo." },
+      { titulo: "Cine casero",      texto: "Rescatar lo íntimo y volverlo relato." },
     ],
     proyectoLargo: {
       titulo: "Festival y ciclo de cine itinerante por América",
@@ -327,9 +327,10 @@ const CONTENIDO = {
   sobreMi: {
     foto: "img/adriana.jpg",
     parrafos: [
-      "<span class=\"drop\">Registro de un Amar Salvaje</span> nació de una certeza sencilla: lo extraordinario no está en otro lugar, está aquí, habitando lo cotidiano, esperando a que alguien lo mire con calma.",
-      "Soy Adriana. Observo. Me detengo en el detalle, en la luz de una mañana, en los gestos que casi nadie nota. Trabajo entre la escritura, la fotografía, el cine y la producción audiovisual, y lo que busco siempre es lo mismo: conservar las historias que merecen permanecer.",
-      "No hago un currículum de esto. Hago un archivo con aire orgánico, un cuaderno de viaje que también es galería y estudio. Un lugar donde acompañar a personas y organizaciones a contar y compartir lo suyo con cuidado.",
+      "No nací con esta certeza. Fue más bien un despertar de hace unos años, darme cuenta de todo lo que daba por sentado y de cuántas cosas ignoraba por ir demasiado rápido. Hoy, uno de mis aprendizajes más profundos y mi recordatorio diario es simple: lo extraordinario no está en otro lugar, <span class=\"drop\">está aquí, habitando lo cotidiano.</span>",
+      "Soy Adriana. La música fue mi primer lenguaje, el sonido me movió antes de nacer y de ahí viene todo lo que escucho y veo. Pero hoy, que soy madre, entiendo que mi oficio principal es la pausa. Me detengo en el detalle, en la luz de una mañana, en los gestos pequeños que casi todos pasan por alto.",
+      "Trabajo entre la escritura, la fotografía, el cine y la producción audiovisual. Lo que busco es siempre lo mismo: conservar las historias que merecen permanecer antes de que el tiempo se las lleve.",
+      "No me interesa construir un escaparate ni un currículum perfecto. Prefiero un archivo vivo y austero, un cuaderno de viaje que también es galería y taller. Un lugar de encuentro donde tener la decencia y la calma de acompañar a personas y organizaciones a contar lo suyo sin artificios, con el cuidado que las cosas verdaderas exigen.",
     ],
   },
 };
