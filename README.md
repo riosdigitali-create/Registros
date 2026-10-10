@@ -42,6 +42,10 @@ Para cambiar la contraseña de producción, ejecuta `node scripts/password.mjs` 
 
 ## Contenido e imágenes
 
+La dirección visual utiliza ciruela, rosa profundo y fondos rosados suaves, con fotografía documental, titulares en Bricolage Grotesque y un archivo de composición asimétrica. `direction.css` define el sitio y `panel-direction.css` adapta la misma identidad al panel. La portada permite elegir entre tres fotografías y los llamados a conversar invitan a «Cuéntame tu historia».
+
+Las fuentes se sirven desde el propio dominio. `scripts/display-font.mjs` prepara Bricolage Grotesque; el sitio ya incluye los archivos necesarios, por lo que no hace falta ejecutar los scripts de fuentes para volver a publicar.
+
 `contenido.js` conserva servicios, portafolio, biografía y redes. Las entradas iniciales se importan una vez en D1; después se editan desde el panel. `scripts/seed.mjs` genera SQL con `INSERT OR IGNORE`, de modo que no sobrescribe cambios existentes.
 
 Las fotografías originales se conservan en `img/`. Las variantes de IA se encuentran en `img/premium/`, junto al manifiesto con dimensiones, selección y límites observados. Las versiones WebP sirven para reducir transferencia, sin atribuir al archivo más resolución que la realmente generada.

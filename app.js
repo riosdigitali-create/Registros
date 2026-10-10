@@ -63,6 +63,19 @@ function fechaLarga(iso){
   if(p.boton)     $("#heroBoton").textContent  = p.boton + " →";
 
   const media = $("#heroMedia");
+  const frames = p.fotogramas || [];
+  if(frames.length && $("#heroFrames")){
+    media.innerHTML=frames.map((f,i)=>'<div class="hero-frame '+(i===0?'active':'')+'" style="background-image:url(\''+esc(safeMedia(f.imagen))+'\')"></div>').join('');
+    $("#heroFrames").innerHTML=frames.map((f,i)=>'<button type="button" class="frame-button" data-frame="'+i+'" aria-label="Mostrar fotografía: '+esc(f.titulo)+'" aria-pressed="'+(i===0)+'">0'+(i+1)+'</button>').join('');
+    $("#heroFrames").addEventListener('click',event=>{
+      const button=event.target.closest('[data-frame]');if(!button)return;
+      const index=Number(button.dataset.frame);
+      $$('.hero-frame',media).forEach((frame,i)=>frame.classList.toggle('active',i===index));
+      $$('.frame-button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===index)));
+      $("#heroCaption").textContent='0'+(index+1)+' / '+frames[index].titulo;
+    });
+    return;
+  }
   if(p.video){
     media.classList.add("con-video");
     media.insertAdjacentHTML("afterbegin",
@@ -146,6 +159,7 @@ function abrirFormCamino(c){
              aria-label="Abrir el carrete de ${esc(p.titulo)}">
       <div class="ph imgph" data-falta="Falta la foto">
         ${img(f0.src, p.titulo)}
+        ${p.fotos?.[1] ? '<img loading="lazy" decoding="async" class="port-hover" src="'+esc(safeMedia(p.fotos[1].src))+'" alt="" aria-hidden="true">' : ''}
         ${p.video ? '<div class="ph-play">▶ Video</div>' : ""}
         ${n > 1 ? '<div class="ph-count">▣ ' + n + " fotos</div>" : ""}
       </div>

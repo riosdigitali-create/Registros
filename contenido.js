@@ -59,12 +59,17 @@ const CONTENIDO = {
      3. PORTADA (HERO)
      ========================================================== */
   portada: {
-    titulo: "Registro de un<br><em>Amar Salvaje.</em>",
+    titulo: "<span class=\"hero-word\">Amar</span><span class=\"hero-word hero-word-last\">Salvaje</span>",
     subtitulo: "Lo extraordinario no está en otra parte. Está aquí, en lo que pocos notan.",
     firma: "Por Adriana A. Antequera Salas",
-    boton: "Quiero contar mi historia",
+    boton: "Cuéntame tu historia",
     /* Imagen de fondo mientras no haya video. */
-    imagen: "img/premium/portada-783a7f9f.webp",
+    imagen: "img/premium/proyecto-1-03-464a2bbc.webp",
+    fotogramas: [
+      {imagen: "img/premium/proyecto-1-03-464a2bbc.webp", titulo: "El oficio de mirar"},
+      {imagen: "img/premium/proyecto-2-02-693f86aa.webp", titulo: "Las manos que crean"},
+      {imagen: "img/premium/portada-783a7f9f.webp", titulo: "Lo cotidiano, de cerca"}
+    ],
     /* Video de fondo. Deja "" si aún no lo tienes.
        Debe ser .mp4, horizontal, sin sonido, de 10 a 20 segundos. */
     video: "",
