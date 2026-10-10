@@ -32,8 +32,8 @@ const CONTENIDO = {
      Cambia estos valores y se actualizan en TODA la página.
      ========================================================== */
   contacto: {
-    correo: "hola@amarsalvaje.com",          // ← PENDIENTE: correo real
-    whatsapp: "521XXXXXXXXXX",               // ← PENDIENTE: lada + número, sin espacios ni +
+    correo: "",                              // Se mostrará al confirmar el correo real.
+    whatsapp: "",                           // Añade un número confirmado con lada, sin espacios ni +.
     whatsappTexto: "Hola Adriana, vengo de tu página web y me gustaría contarte mi historia.",
     instagram: "https://www.instagram.com/registro_de_un_amar_salvaje/",
     instagramUsuario: "@registro_de_un_amar_salvaje",
@@ -59,12 +59,12 @@ const CONTENIDO = {
      3. PORTADA (HERO)
      ========================================================== */
   portada: {
-    titulo: "Registro de un<br>Amar Salvaje",
+    titulo: "Registro de un<br><em>Amar Salvaje.</em>",
     subtitulo: "Lo extraordinario no está en otra parte. Está aquí, en lo que pocos notan.",
     firma: "Por Adriana A. Antequera Salas",
     boton: "Quiero contar mi historia",
     /* Imagen de fondo mientras no haya video. */
-    imagen: "img/portada.jpg",
+    imagen: "img/premium/portada-783a7f9f.webp",
     /* Video de fondo. Deja "" si aún no lo tienes.
        Debe ser .mp4, horizontal, sin sonido, de 10 a 20 segundos. */
     video: "",
@@ -78,7 +78,7 @@ const CONTENIDO = {
       id: "personales",
       icono: "❤️",
       titulo: "Historias personales",
-      imagen: "img/camino-personales.jpg",
+      imagen: "img/premium/camino-personales-53665bd2.webp",
       descripcion: "Transformamos las fotografías y videos olvidados en tu celular en pequeñas piezas audiovisuales para recordar viajes, cumpleaños, familias, mascotas y momentos importantes.",
       lista: [
         "Videos de viajes", "Cumpleaños", "Regalos audiovisuales", "Bebés",
@@ -105,7 +105,7 @@ const CONTENIDO = {
       id: "artisticos",
       icono: "🎬",
       titulo: "Proyectos artísticos y culturales",
-      imagen: "img/camino-artisticos.jpg",
+      imagen: "img/premium/camino-artisticos-bc9de1f8.webp",
       descripcion: "Acompañamiento creativo y producción para artistas, cineastas, organizaciones y proyectos culturales.",
       lista: [
         "Producción audiovisual", "Videoclips", "Documentales", "Producción ejecutiva",
@@ -146,9 +146,9 @@ const CONTENIDO = {
       video: "",
       /* El carrete. Agrega tantas fotos como quieras. */
       fotos: [
-        { src: "img/proyecto-1-01.jpg", pie: "La carretera antes del amanecer." },
-        { src: "img/proyecto-1-02.jpg", pie: "Lo que cabía en la ventanilla." },
-        { src: "img/proyecto-1-03.jpg", pie: "El último día, ya sin prisa." },
+        { src: "img/premium/proyecto-1-01-b69bc8f1.webp", pie: "La carretera antes del amanecer." },
+        { src: "img/premium/proyecto-1-02-9244ef30.webp", pie: "Lo que cabía en la ventanilla." },
+        { src: "img/premium/proyecto-1-03-464a2bbc.webp", pie: "El último día, ya sin prisa." },
       ],
     },
     {
@@ -158,8 +158,8 @@ const CONTENIDO = {
       proceso: "Del proceso: el tiempo como aliado, no como enemigo.",
       video: "",
       fotos: [
-        { src: "img/proyecto-2-01.jpg", pie: "El taller, a las seis de la mañana." },
-        { src: "img/proyecto-2-02.jpg", pie: "Las manos que saben sin mirar." },
+        { src: "img/premium/proyecto-2-01-b0fca147.webp", pie: "El taller, a las seis de la mañana." },
+        { src: "img/premium/proyecto-2-02-693f86aa.webp", pie: "Las manos que saben sin mirar." },
       ],
     },
     {
@@ -169,8 +169,8 @@ const CONTENIDO = {
       proceso: "Del proceso: dejar que el paisaje también cantara.",
       video: "",
       fotos: [
-        { src: "img/proyecto-3-01.jpg", pie: "La niebla llegó puntual." },
-        { src: "img/proyecto-3-02.jpg", pie: "Grabar con el agua como metrónomo." },
+        { src: "img/premium/proyecto-3-01-c42cc898.webp", pie: "La niebla llegó puntual." },
+        { src: "img/premium/proyecto-3-02-3cff0fbb.webp", pie: "Grabar con el agua como metrónomo." },
       ],
     },
     {
@@ -180,7 +180,7 @@ const CONTENIDO = {
       proceso: "Del proceso: cada imagen guardaba una voz.",
       video: "",
       fotos: [
-        { src: "img/proyecto-4-01.jpg", pie: "Cincuenta años en una caja de zapatos." },
+        { src: "img/premium/proyecto-4-01-9980aaa9.webp", pie: "Cincuenta años en una caja de zapatos." },
       ],
     },
     {
@@ -190,8 +190,8 @@ const CONTENIDO = {
       proceso: "Del proceso: mirar despacio hasta que aparece.",
       video: "",
       fotos: [
-        { src: "img/proyecto-5-01.jpg", pie: "La luz de las siete." },
-        { src: "img/proyecto-5-02.jpg", pie: "Un vaso, una sombra, nada más." },
+        { src: "img/premium/proyecto-5-01-e3ca184b.webp", pie: "La luz de las siete." },
+        { src: "img/premium/proyecto-5-02-a0cf16a4.webp", pie: "Un vaso, una sombra, nada más." },
       ],
     },
     {
@@ -201,8 +201,8 @@ const CONTENIDO = {
       proceso: "Del proceso: producir es también cuidar a la gente.",
       video: "",
       fotos: [
-        { src: "img/proyecto-6-01.jpg", pie: "La pantalla llegó en camioneta." },
-        { src: "img/proyecto-6-02.jpg", pie: "El público, que siempre aparece." },
+        { src: "img/premium/proyecto-6-01-75cc5d1b.webp", pie: "La pantalla llegó en camioneta." },
+        { src: "img/premium/proyecto-6-02-5874b36d.webp", pie: "El público, que siempre aparece." },
       ],
     },
   ],
@@ -240,7 +240,7 @@ const CONTENIDO = {
       categoria: "Lugares",
       titulo: "El mercado antes de que amanezca",
       resumen: "Voces, cajas de fruta y una luz que todavía no decide de qué color será el día.",
-      portada: "img/bitacora-01.jpg",
+      portada: "img/premium/bitacora-01-a662491a.webp",
       texto: [
         "Llegué a las cinco y media. El mercado ya llevaba una hora despierto, como si la ciudad tuviera un turno secreto que empieza antes que el resto.",
         "Lo que me interesa de estos lugares no es el color ni el movimiento. Es la manera en que la gente se habla cuando cree que nadie la está mirando.",
@@ -256,7 +256,7 @@ const CONTENIDO = {
       categoria: "Miradas",
       titulo: "Sobre el oficio de observar",
       resumen: "Una reflexión breve sobre la fotografía, el cine y la paciencia que exige la vida cotidiana.",
-      portada: "img/bitacora-02.jpg",
+      portada: "img/premium/bitacora-02-02442cf3.webp",
       texto: [
         "Observar no es mirar más rápido. Es quedarse hasta que la escena deja de actuar para la cámara.",
       ],
@@ -271,7 +271,7 @@ const CONTENIDO = {
       categoria: "Detrás de las historias",
       titulo: "Cómo nació el documental",
       resumen: "El origen, los tropiezos y los aprendizajes detrás de un proyecto que tardó dos años.",
-      portada: "img/bitacora-03.jpg",
+      portada: "img/premium/bitacora-03-00dfec18.webp",
       texto: [
         "Dos años suenan a mucho hasta que entiendes que el primero se fue solo en ganarse la confianza de la gente.",
       ],
@@ -315,7 +315,7 @@ const CONTENIDO = {
         tipo: "imagen",
         titulo: "Cartel de la actividad",
         descripcion: "Cartel de Sentidos Emergentes.",
-        archivo: "img/cartel-das.jpg",
+        archivo: "img/premium/cartel-das-bf52a652.webp",
         etiqueta: "Ver cartel",
       },
     ],
@@ -325,7 +325,7 @@ const CONTENIDO = {
      8. SOBRE MÍ
      ========================================================== */
   sobreMi: {
-    foto: "img/adriana.jpg",
+    foto: "img/premium/adriana-d4bb4098.webp",
     parrafos: [
       "No nací con esta certeza. Fue más bien un despertar de hace unos años, darme cuenta de todo lo que daba por sentado y de cuántas cosas ignoraba por ir demasiado rápido. Hoy, uno de mis aprendizajes más profundos y mi recordatorio diario es simple: lo extraordinario no está en otro lugar, <span class=\"drop\">está aquí, habitando lo cotidiano.</span>",
       "Soy Adriana. La música fue mi primer lenguaje, el sonido me movió antes de nacer y de ahí viene todo lo que escucho y veo. Pero hoy, que soy madre, entiendo que mi oficio principal es la pausa. Me detengo en el detalle, en la luz de una mañana, en los gestos pequeños que casi todos pasan por alto.",
