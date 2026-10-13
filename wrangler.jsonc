@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "registro-amar-salvaje",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-09",
+  "routes": [ { "pattern": "registrodeunamorsalvaje.com", "custom_domain": true } ],
+  "assets": { "directory": "./dist", "binding": "ASSETS", "run_worker_first": ["/api/*", "/media/*"] },
+  "account_id": "53dad3eaa92519bd347cde92a09e198c",
+  "d1_databases": [{ "binding": "DB", "database_name": "registro-amar-salvaje", "database_id": "b3b65471-b60e-4e52-a654-7da6ef5d600e", "migrations_dir": "migrations" }],
+  "r2_buckets": [{ "binding": "MEDIOS", "bucket_name": "registro-amar-salvaje-medios" }],
+  "vars": { "SITE_URL": "https://registrodeunamorsalvaje.com" },
+  "observability": { "enabled": true }
+}

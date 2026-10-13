@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+const source=fs.readFileSync('contenido.js','utf8');
+const content=vm.runInNewContext(source+';JSON.parse(JSON.stringify(CONTENIDO))');
+delete content.bitacora;delete content.formulario;
+const clean=value=>value.replace(/<br\s*\/?>/gi,'\n').replace(/<[^>]*>/g,'').replace(/&hellip;/g,'…').trim();
+content.portada.titulo='Amar\nSalvaje';content.sobreMi.parrafos=content.sobreMi.parrafos.map(clean);
+const html=fs.readFileSync('index.html','utf8');
+const names={inicio:'Portada',portafolio:'Archivo fotográfico',servicios:'Servicios',frase:'Una forma de mirar',bitacora:'Bitácora',laboratorio:'Laboratorio DAS','sobre-mi':'Sobre mí',contacto:'Contacto'};
+const sections=Object.entries(names).map(([id,nombre])=>{
+ const fragment=id==='frase'?html.match(/<section class="quote-band[\s\S]*?<\/section>/)?.[0]:html.match(new RegExp('<section[^>]*id="'+id+'"[\\s\\S]*?<\\/section>'))?.[0];
+ const heading=fragment?.match(/<h2 class="section-title">([\s\S]*?)<\/h2>/)?.[1]||'';
+ const intros=Array.from((fragment||'').matchAll(/<p class="lead"[^>]*>([\s\S]*?)<\/p>/g),m=>clean(m[1]));
+ return {id,nombre,titulo:clean(heading.replace(/<span class="section-count">.*?<\/span>/,'').replace(/<span class="contact-arrow"[^>]*>.*?<\/span>/,'')),intro:intros[0]||'',intro2:intros[1]||''};
+});
+sections.find(s=>s.id==='frase').titulo='No es la cámara.\nEs la intención.';
+sections.find(s=>s.id==='frase').intro=clean(html.match(/<p class="quote-sub">([\s\S]*?)<\/p>/)[1]);
+const data={contenido:content,secciones:sections,orden:['inicio','portafolio','servicios','frase','bitacora','laboratorio','sobre-mi','contacto']};
+fs.writeFileSync('site-defaults.json',JSON.stringify(data,null,2)+'\n');
+console.log('Contenido inicial del editor preparado.');

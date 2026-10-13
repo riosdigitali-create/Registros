@@ -1,0 +1,480 @@
+{
+  "tool": "built-in imagegen",
+  "date": "2026-10-09",
+  "status": "complete",
+  "images": [
+    {
+      "source": "portada.jpg",
+      "output": "premium/portada.png",
+      "status": "reviewed_original_selected",
+      "notes": "La salida IA reduce resolución de 2200x1650 a 1448x1086; se mantiene la fuente para hero.",
+      "selected": "original",
+      "source_resolution": {
+        "width": 2200,
+        "height": 1650
+      },
+      "output_resolution": {
+        "width": 1448,
+        "height": 1086
+      },
+      "visual_review": true,
+      "web": {
+        "path": "img/premium/portada-783a7f9f.webp",
+        "width": 2200,
+        "height": 1650,
+        "bytes": 587690
+      }
+    },
+    {
+      "source": "camino-personales.jpg",
+      "output": "premium/camino-personales.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Input image is edit target camino-personales.jpg. Faithfully restore and improve this exact documentary photograph for an intimate premium artistic editorial website. Preserve every person's identity, facial proportions, facial expression, age, hair, skin details, clothing, pose and hands exactly; preserve background objects, scene, artwork, camera viewpoint, framing and aspect ratio. Only improve sharpness and real fine detail, remove JPEG artifacts and noise, refine exposure and gently correct color casts, sophisticated soft editorial grading, preserve photographic authenticity and natural textures. Do not smooth away skin, retouch attractiveness, invent detail, change faces, replace objects, alter artworks, crop or add text. Aim for highest available native resolution. No borders, watermarks or added subjects.",
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1400,
+        "height": 980
+      },
+      "output_resolution": {
+        "width": 1498,
+        "height": 1050
+      },
+      "visual_review": true,
+      "web": {
+        "path": "img/premium/camino-personales-53665bd2.webp",
+        "width": 1498,
+        "height": 1050,
+        "bytes": 239368
+      }
+    },
+    {
+      "source": "camino-artisticos.jpg",
+      "output": "premium/camino-artisticos.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Input image is edit target camino-artisticos.jpg. Faithfully restore and improve this exact documentary photograph for an intimate premium artistic editorial website. Preserve every person's identity, facial proportions, facial expression, age, hair, skin details, clothing, pose and hands exactly; preserve background objects, scene, artwork, camera viewpoint, framing and aspect ratio. Only improve sharpness and real fine detail, remove JPEG artifacts and noise, refine exposure and gently correct color casts, sophisticated soft editorial grading, preserve photographic authenticity and natural textures. Do not smooth away skin, retouch attractiveness, invent detail, change faces, replace objects, alter artworks, crop or add text. Aim for highest available native resolution. No borders, watermarks or added subjects.",
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1400,
+        "height": 630
+      },
+      "output_resolution": {
+        "width": 1870,
+        "height": 841
+      },
+      "visual_review": true,
+      "web": {
+        "path": "img/premium/camino-artisticos-bc9de1f8.webp",
+        "width": 1870,
+        "height": 841,
+        "bytes": 273116
+      }
+    },
+    {
+      "source": "adriana.jpg",
+      "output": "premium/adriana.png",
+      "status": "reviewed_original_selected",
+      "prompt": "Use case: identity-preserve. Input image is edit target adriana.jpg. Faithfully restore and improve this exact documentary photograph for an intimate premium artistic editorial website. Preserve every person's identity, facial proportions, facial expression, age, hair, skin details, clothing, pose and hands exactly; preserve background objects, scene, artwork, camera viewpoint, framing and aspect ratio. Only improve sharpness and real fine detail, remove JPEG artifacts and noise, refine exposure and gently correct color casts, sophisticated soft editorial grading, preserve photographic authenticity and natural textures. Do not smooth away skin, retouch attractiveness, invent detail, change faces, replace objects, alter artworks, crop or add text. Aim for highest available native resolution. No borders, watermarks or added subjects.",
+      "notes": "La salida IA es ligeramente menor y reconstruye detalles faciales; se prioriza identidad exacta del retrato original.",
+      "selected": "original",
+      "source_resolution": {
+        "width": 1200,
+        "height": 1321
+      },
+      "output_resolution": {
+        "width": 1195,
+        "height": 1316
+      },
+      "visual_review": true,
+      "web": {
+        "path": "img/premium/adriana-d4bb4098.webp",
+        "width": 1200,
+        "height": 1321,
+        "bytes": 116934
+      }
+    },
+    {
+      "source": "proyecto-1-01.jpg",
+      "output": "premium/proyecto-1-01.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: lighting-weather. Edit target: supplied original landscape photo. Restore this exact landscape for premium documentary editorial use. Preserve mountain contours, terrain layout, stream, stones, electrical tower and specifically the same six human shadows in the same positions and gestures. Preserve full framing and ratio. Reduce compression, clarify rock and grass texture, gently improve dynamic range in dark foreground, delicate natural warm earth and cool blue sky grade. Highest available native resolution. No invented people, no changed weather, no added objects, no cropping, no text, no watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1600,
+        "height": 901
+      },
+      "output_resolution": {
+        "width": 1671,
+        "height": 941
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/proyecto-1-01-b69bc8f1.webp",
+        "width": 1671,
+        "height": 941,
+        "bytes": 566076
+      }
+    },
+    {
+      "source": "proyecto-2-01.jpg",
+      "output": "premium/proyecto-2-01.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied documentary workshop photograph. Enhance this exact photo for premium artistic editorial website with maximum native resolution, ideally 3840 pixels wide and never below original 1600x720. Preserve every person's identity, facial anatomy, expressions, hair, clothing, gestures, hands and pose. Preserve all silk-screen artworks and exact placement of tools, jars, ink, furniture and background. Preserve exact original panorama framing and ratio. Only restore clarity, noise/compression removal and subtle refined exposure/color, natural textures and documentary atmosphere. No new objects or subjects, no removed objects, no cropping or changed artworks, no retouching attractiveness, no text overlay or watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1600,
+        "height": 720
+      },
+      "output_resolution": {
+        "width": 1870,
+        "height": 841
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/proyecto-2-01-b0fca147.webp",
+        "width": 1870,
+        "height": 841,
+        "bytes": 340486
+      }
+    },
+    {
+      "source": "proyecto-3-01.jpg",
+      "output": "premium/proyecto-3-01.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied documentary photo of walker with large sack and black dog above mountain city. Restore this exact photograph with maximum available native resolution, ideally 3840 pixels wide and never below original 1057x632. Preserve walker's exact identity, hidden face, clothing, posture, sack, dog anatomy and pose, trail, cactus, skyline, mountain contours and original cloudy weather exactly. Preserve full original framing and ratio. Only recover exposure subtly, clean compression/noise, enhance realistic fine detail and tonal separation for premium documentary editorial use. Keep moody natural overcast atmosphere and authentic textures. Do not invent detail, add people, alter skyline, replace landscape, crop or add text/border/watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1057,
+        "height": 632
+      },
+      "output_resolution": {
+        "width": 1622,
+        "height": 969
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/proyecto-3-01-c42cc898.webp",
+        "width": 1622,
+        "height": 969,
+        "bytes": 345560
+      }
+    },
+    {
+      "source": "proyecto-4-01.jpg",
+      "output": "premium/proyecto-4-01.png",
+      "status": "reviewed_original_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied documentary portrait photo of woman with young child looking into camera. Improve this exact photo for premium artistic editorial website. Maximum available native resolution, ideally 2160x2880, never less than source 1125x1500. Preserve exact woman's and child's identities, facial anatomy, expressions, ages, hair, skin marks, clothing, hands, fingers, pose, camera and its labels; preserve all tables, chairs, phone, brick wall, color of tablecloths, original framing and 3:4 ratio. Only clarify authentic texture/detail and subtly improve exposure and neutral color, remove JPEG noise. Keep documentary authenticity. No beautification, no new subjects or objects, no removals, no crop, text overlay, border or watermark.",
+      "selected": "original",
+      "source_resolution": {
+        "width": 1125,
+        "height": 1500
+      },
+      "output_resolution": {
+        "width": 1086,
+        "height": 1449
+      },
+      "visual_review": true,
+      "notes": "La salida IA reduce resolución y reconstruye detalles de manos/rostros; se mantiene original.",
+      "web": {
+        "path": "img/premium/proyecto-4-01-9980aaa9.webp",
+        "width": 1125,
+        "height": 1500,
+        "bytes": 150010
+      }
+    },
+    {
+      "source": "proyecto-5-01.jpg",
+      "output": "premium/proyecto-5-01.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: precise-object-edit. Edit target: supplied macro photograph of pink paint brush against wall. Faithfully restore this exact image for premium artistic editorial website. Maximum available native resolution, ideally 3840x1728, never less than original1600x720. Keep same brush shape, angle, bristles, handle, metal ferrule, paint color and positions on wall, wall marks and texture, framing and panoramic ratio. Only improve true fine detail, reduce compression and noise, refine subtle natural exposure/color, high-end macro photographic clarity. Preserve original shallow depth of field. No redesign, no invented paint marks, no extra objects or subjects, crop, text, border or watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1600,
+        "height": 720
+      },
+      "output_resolution": {
+        "width": 1870,
+        "height": 841
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/proyecto-5-01-e3ca184b.webp",
+        "width": 1870,
+        "height": 841,
+        "bytes": 263998
+      }
+    },
+    {
+      "source": "proyecto-6-01.jpg",
+      "output": "premium/proyecto-6-01.png",
+      "status": "reviewed_original_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied photo of traditional flying pole performers beside ornate stone church. Restore this exact photograph for premium documentary artistic editorial website. Maximum available native resolution, ideally3840x2160, never below1600x900. Preserve exactly each performer, posture, clothing, rope placement, pole, church stone architecture and all architectural details, antennas, clouds, blue sky, camera framing and 16:9 aspect ratio. Only improve fine detail, remove noise/compression, refine natural dynamic range and color with delicate warm stone tones. Do not redesign architecture, add/remove performers, alter sky/weather, move ropes, crop, add text, border or watermark. Authentic photography only.",
+      "selected": "original",
+      "source_resolution": {
+        "width": 1600,
+        "height": 900
+      },
+      "output_resolution": {
+        "width": 1672,
+        "height": 941
+      },
+      "visual_review": true,
+      "notes": "La IA reconstruye nubes y detalles arquitectónicos; se mantiene original por fidelidad documental.",
+      "web": {
+        "path": "img/premium/proyecto-6-01-75cc5d1b.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 112690
+      }
+    },
+    {
+      "source": "bitacora-01.jpg",
+      "output": "premium/bitacora-01.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied documentary photograph of seated women outdoors. Restore this exact image for premium artistic documentary website. Request maximum available native resolution ideally2800x2100 and never smaller than original1400x1050. Keep exactly every face, expression, identity, skin marks, age, hair, clothing, hats, hands, postures, surrounding bystanders, background rocks/ground and crop. Preserve original4:3 framing. Only refine realistic sharpness/texture, noise/compression removal and gentle exposure/color restoration. No beautification, no face redesign, no added or removed subjects/objects, no relighting scene, no crop, no text overlay, no border or watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1400,
+        "height": 1050
+      },
+      "output_resolution": {
+        "width": 1448,
+        "height": 1086
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/bitacora-01-a662491a.webp",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 331856
+      }
+    },
+    {
+      "source": "bitacora-02.jpg",
+      "output": "premium/bitacora-02.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied documentary photograph of hooded camera operator in foreground and deliberately defocused seated people beyond. Restore this exact photograph for premium artistic documentary website. Request maximum available native resolution ideally2800x1576, never smaller than1400x788. Keep original16:9 composition, camera operator identity and face hidden, hood, shirt pattern, backpack straps, camera/tripod, background people positions and intentionally shallow depth of field. Preserve complete original scene and blur bokeh; DO NOT bring background faces into focus or invent them. Only improve authentic foreground fine detail, remove JPEG noise and subtly refine natural color/exposure. No extra subjects, objects, crop, changed weather, text, border or watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1400,
+        "height": 788
+      },
+      "output_resolution": {
+        "width": 1672,
+        "height": 941
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/bitacora-02-02442cf3.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 153104
+      }
+    },
+    {
+      "source": "bitacora-03.jpg",
+      "output": "premium/bitacora-03.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied behind-the-scenes documentary portrait of woman operating camera gimbal under thatched wooden roof. Restore this exact photograph for premium artistic editorial website. Request maximum native resolution ideally1688x3000 never below844x1500. Preserve same woman's identity, visible face profile, hair, body proportions, pose, hands, clothing pattern, jeans, belt/phone; preserve camera/gimbal labels and geometry, LED light and stand, roof beams, thatch, rustic wall, metal cooking pots and all scene objects exactly. Keep full original9:16 portrait framing. Only reduce JPEG noise, refine realistic texture/sharpness and subtle exposure/color restoration. No redesign, crop, beautification, added or removed objects, text overlay, border or watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 844,
+        "height": 1500
+      },
+      "output_resolution": {
+        "width": 941,
+        "height": 1672
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/bitacora-03-00dfec18.webp",
+        "width": 941,
+        "height": 1672,
+        "bytes": 486064
+      }
+    },
+    {
+      "source": "proyecto-1-02.jpg",
+      "output": "premium/proyecto-1-02.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: lighting-weather. Input edit target: original photograph of pickup truck full of red/pink/purple flowers on country road. Restore same photo at maximum native resolution, ideally3840x1728 and never below1600x720. Exact same flower arrangement/colors, truck, road, surrounding trees/fence/sign, sky/cloud positions, original framing/ratio. Improve fine natural textures, reduce JPEG noise and subtly refine contrast and color. Preserve authentic daylight. No invented flowers or objects, no replacement sky, no crop, text, border or watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1600,
+        "height": 720
+      },
+      "output_resolution": {
+        "width": 1870,
+        "height": 841
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/proyecto-1-02-9244ef30.webp",
+        "width": 1870,
+        "height": 841,
+        "bytes": 590360
+      }
+    },
+    {
+      "source": "proyecto-1-03.jpg",
+      "output": "premium/proyecto-1-03.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Edit target: documentary film crew with boom microphone beside mountain road. Restore this exact photograph at maximum native resolution ideally3840x2160 and never below1600x900 for premium documentary editorial use. Preserve each crew member's identity, dark faces and silhouettes, posture, clothes, hands, equipment, microphone, road, electrical tower, mountain contours and cloud positions. Keep original16:9 framing. ONLY subtle shadow/exposure recovery, reduction of JPEG noise and authentic fine detail improvement. Retain original strong backlight and natural documentary scene. Do not invent faces in deep shadow, change sky, add/remove objects, crop, add text, border or watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1600,
+        "height": 900
+      },
+      "output_resolution": {
+        "width": 1672,
+        "height": 941
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/proyecto-1-03-464a2bbc.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 459518
+      }
+    },
+    {
+      "source": "proyecto-2-02.jpg",
+      "output": "premium/proyecto-2-02.png",
+      "status": "reviewed_ai_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied photo of two artists displaying printing screens in workshop. Faithfully restore this exact photograph for premium artistic documentary website at maximum native resolution ideally3840x1728 and never smaller than1600x720. Preserve exactly each person's identity, facial features, age, expression, hair, glasses, clothing logos, hands and poses. Preserve printing screen artworks without redrawing, shelves/racks, background artworks and original panoramic crop. Only improve authentic fine detail, remove JPEG noise, subtly correct exposure/color retaining original room atmosphere. No beautification, no changed artwork, no added/removed objects, no crop, text overlay, border or watermark.",
+      "selected": "ai",
+      "source_resolution": {
+        "width": 1600,
+        "height": 720
+      },
+      "output_resolution": {
+        "width": 1870,
+        "height": 841
+      },
+      "visual_review": true,
+      "notes": "Variante IA inspeccionada: escena, sujetos y composición reconocibles preservados. Mejora visible de claridad/exposición; reconstrucción generativa de detalle fino, sin garantía de equivalencia píxel a píxel.",
+      "web": {
+        "path": "img/premium/proyecto-2-02-693f86aa.webp",
+        "width": 1870,
+        "height": 841,
+        "bytes": 376020
+      }
+    },
+    {
+      "source": "proyecto-3-02.jpg",
+      "output": "premium/proyecto-3-02.png",
+      "status": "reviewed_original_selected",
+      "prompt": "Use case: identity-preserve. Edit target: original photograph of woman beside green mountain lagoon. Faithfully restore this exact photograph at maximum available native resolution ideally3200x2400 and never below1600x1200. Preserve exact woman identity, expression, hair, pose, clothes, hands, shadow, lake shape/color/reflections, rocks, trees, hills, clouds and original sunbeam glare. Keep original4:3 composition and framing. Only subtle removal JPEG noise, restoration of authentic fine texture and gentle exposure/color refinement. No invented scenery/detail, no changed face, no replaced sky or reflections, no removed objects, crop, text, border or watermark.",
+      "selected": "original",
+      "source_resolution": {
+        "width": 1600,
+        "height": 1200
+      },
+      "output_resolution": {
+        "width": 1448,
+        "height": 1086
+      },
+      "visual_review": true,
+      "notes": "La salida IA reduce resolución y reconstruye nubes/reflejos; se mantiene original.",
+      "web": {
+        "path": "img/premium/proyecto-3-02-3cff0fbb.webp",
+        "width": 1600,
+        "height": 1200,
+        "bytes": 442178
+      }
+    },
+    {
+      "source": "proyecto-5-02.jpg",
+      "output": "premium/proyecto-5-02.png",
+      "status": "reviewed_original_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied close documentary photo of long-haired bearded artist holding artwork. Restore exact photograph at maximum available native resolution ideally3840x1728 and never below1600x720. Preserve exact man's identity, facial anatomy, expression, eyes, hair/curls, beard, skin features, hand/finger anatomy, clothing, exact held artwork including symbols and letters without redrawing, scene objects and original tilted panoramic framing/ratio. Only improve authentic texture and fine sharpness, remove noise/JPEG artifacts, gentle exposure/color correction. Do not beautify or change face, rearrange artwork, replace scene, add/remove objects, crop, add text/border/watermark.",
+      "selected": "original",
+      "source_resolution": {
+        "width": 1600,
+        "height": 720
+      },
+      "output_resolution": {
+        "width": 1870,
+        "height": 841
+      },
+      "visual_review": true,
+      "notes": "La IA reconstruye trazos/símbolos del artwork sostenido; se prioriza fidelidad de la obra original.",
+      "web": {
+        "path": "img/premium/proyecto-5-02-a0cf16a4.webp",
+        "width": 1600,
+        "height": 720,
+        "bytes": 175042
+      }
+    },
+    {
+      "source": "proyecto-6-02.jpg",
+      "output": "premium/proyecto-6-02.png",
+      "status": "reviewed_original_selected",
+      "prompt": "Use case: identity-preserve. Edit target: supplied documentary photograph of orchestra and standing performers on stage facing crowded theater. Restore this exact photo at maximum native resolution ideally3840x2160, never smaller than1600x900. Preserve every performer and musician identity, facial expressions, ages, hair, clothing, posture, hands, instruments, sheet music/tablets, microphones, cables, surrounding audience, theater architectural tiers, balcony railings, all lights and original16:9 framing. Only reduce compression/noise and gently restore authentic detail/exposure. Retain original stage lighting and dark crowd; do not invent new faces or people in darkness, redesign architecture, add/remove subjects/objects, crop, text overlay, border or watermark.",
+      "selected": "original",
+      "source_resolution": {
+        "width": 1600,
+        "height": 900
+      },
+      "output_resolution": {
+        "width": 1672,
+        "height": 941
+      },
+      "visual_review": true,
+      "notes": "La IA reconstruye rostros de espectadores y músicos en sombras; se mantiene original por identidad/documentación.",
+      "web": {
+        "path": "img/premium/proyecto-6-02-5874b36d.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 222738
+      }
+    },
+    {
+      "source": "cartel-das.jpg",
+      "output": "premium/cartel-das.png",
+      "status": "reviewed_original_selected",
+      "prompt": "Use case: precise-object-edit. Edit target: supplied graphic poster. Carefully restore/clean and enhance resolution of THIS EXACT ORIGINAL POSTER without redesigning it. Maximum available native resolution ideally2160x2700, NEVER below original1080x1350. Preserve layout, edges, eye photograph, all colors, collage layers, logos and typography EXACTLY. Preserve ALL text verbatim: 'BOL - MEX - ARG - ES', '100% ONLINE Y GRATUITO', '9 ENCUENTROS', 'SENTIDOS', 'EMERGENTES', 'DIALOGO EXPERIMENTAL. ESPACIO VIVO', 'DAS', '+INFO → IG:@DAS.THATSIT', plus all existing small logo text. Do not correct or rewrite any existing spelling, keep logo shapes precisely. Only remove compression and restore fine edge clarity. No additional text, logos, new graphics, crop, border or watermark.",
+      "selected": "original",
+      "source_resolution": {
+        "width": 1080,
+        "height": 1350
+      },
+      "output_resolution": {
+        "width": 1122,
+        "height": 1402
+      },
+      "visual_review": true,
+      "notes": "Texto principal mantenido, pero la IA modifica pequeños logos/gráficos; se mantiene cartel original para fidelidad.",
+      "web": {
+        "path": "img/premium/cartel-das-bf52a652.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 177972
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "source": "bitacora-xx.jpg",
+      "status": "not_used",
+      "notes": "Solo referenciada en ejemplo comentado de contenido.js; no usada en contenido activo."
+    }
+  ],
+  "summary": {
+    "active_sources": 20,
+    "generated_variants": 20,
+    "selected_ai": 12,
+    "selected_original": 8
+  },
+  "limitations": "La herramienta decidió dimensiones de salida; las peticiones de4K no se cumplieron y no se declara upscale universal. Todos los originales se conservaron. Las variantes descartadas siguen guardadas para revisión."
+}
