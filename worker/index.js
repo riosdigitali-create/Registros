@@ -1,3 +1,4 @@
+import {defaults,validateSite} from './site-model.js';
 const enc=new TextEncoder();
 const security={'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','X-Frame-Options':'DENY'};
 function json(value,status=200,more={}){return new Response(JSON.stringify(value),{status,headers:{...security,'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store',...more}});}
@@ -73,7 +74,26 @@ export default {async fetch(req,env){
    await limit(env,req,'contacto',5);const data=await body(req,40000);if(data.website)return json({ok:true},201);
    const fila=messageInput(data),columns=Object.keys(fila);await env.DB.prepare(`INSERT INTO mensajes(id,${columns.join(',')}) VALUES(?${',?'.repeat(columns.length)})`).bind(crypto.randomUUID(),...Object.values(fila)).run();return json({ok:true},201);
   }
+  if(path==='/api/site'&&req.method==='GET'){
+   const row=await env.DB.prepare('SELECT contenido,revision,actualizado FROM sitio WHERE id=1').first();
+   return json({data:row?JSON.parse(row.contenido):defaults,revision:row?.revision||0,actualizado:row?.actualizado||null});
+  }
   const admin=path.startsWith('/api/')?await authenticated(req,env):false;
+  if(path==='/api/site'&&req.method==='PUT'){
+   if(!admin)fail(401,'Inicia sesión.');const input=await body(req,400000);
+   if(!Number.isSafeInteger(input.revision)||input.revision<0)fail(400,'Versión inválida.');
+   const config=validateSite(input.data);let result;
+   if(input.revision===0)result=await env.DB.prepare('INSERT INTO sitio(id,contenido,revision) VALUES(1,?,1) ON CONFLICT(id) DO NOTHING').bind(JSON.stringify(config)).run();
+   else result=await env.DB.prepare("UPDATE sitio SET contenido=?,revision=revision+1,actualizado=strftime('%Y-%m-%dT%H:%M:%fZ','now') WHERE id=1 AND revision=?").bind(JSON.stringify(config),input.revision).run();
+   if(!result.meta.changes)fail(409,'La página cambió en otra pestaña. Recarga el editor antes de guardar.');
+   return json({ok:true,revision:input.revision+1});
+  }
+  if(path==='/api/media-library'&&req.method==='GET'){
+   if(!admin)fail(401,'Inicia sesión.');const rows=await env.DB.prepare('SELECT * FROM biblioteca ORDER BY creado_en DESC').all();
+   const existing=await env.MEDIOS.list({limit:1000});const known=new Set(rows.results.map(r=>r.url));
+   const legacy=existing.objects.filter(o=>/^[a-f0-9-]{36}\.(jpg|png|webp|gif|avif)$/.test(o.key)&&!known.has('/media/'+o.key)).map(o=>({url:'/media/'+o.key,nombre:'Fotografía guardada',carpeta:'Subidas anteriores',tipo:'image/'+o.key.split('.').at(-1)}));
+   return json([...rows.results,...legacy]);
+  }
   if(path==='/api/bitacora'&&req.method==='GET'){
    const published=url.searchParams.get('publicado')==='eq.true';if(!published&&!admin)fail(401,'Inicia sesión para ver los borradores.');
    const rows=await env.DB.prepare(`SELECT * FROM bitacora ${published?'WHERE publicado=1':''} ORDER BY fecha DESC,creado_en DESC`).all();return json(rows.results.map(decodeRow));
@@ -92,7 +112,10 @@ export default {async fetch(req,env){
    if(!admin)fail(401,'Inicia sesión.');if(!env.MEDIOS)fail(503,'El almacén no está conectado.');
    const type=(req.headers.get('Content-Type')||'').split(';')[0];const ext={'image/jpeg':'jpg','image/png':'png','image/webp':'webp','image/gif':'gif','image/avif':'avif','audio/mpeg':'mp3','audio/wav':'wav','audio/x-wav':'wav','audio/ogg':'ogg','audio/mp4':'m4a','video/mp4':'mp4','application/pdf':'pdf'}[type];if(!ext)fail(415,'Formato de archivo no permitido.');
    if(Number(req.headers.get('Content-Length'))>25*1024*1024)fail(413,'El archivo debe pesar menos de 25 MB.');const buffer=await readBytes(req,25*1024*1024);if(!buffer.byteLength)fail(400,'El archivo está vacío.');
-   const key=crypto.randomUUID()+'.'+ext;await env.MEDIOS.put(key,buffer,{httpMetadata:{contentType:type}});return json({url:'/media/'+key},201);
+   let name='Archivo.'+ext,folder='';try{name=text(decodeURIComponent(req.headers.get('X-File-Name')||name),150)||name;folder=text(decodeURIComponent(req.headers.get('X-File-Folder')||''),150);}catch{fail(400,'Nombre de archivo inválido.');}
+   const key=crypto.randomUUID()+'.'+ext;await env.MEDIOS.put(key,buffer,{httpMetadata:{contentType:type}});
+   await env.DB.prepare('INSERT INTO biblioteca(url,nombre,carpeta,tipo) VALUES(?,?,?,?)').bind('/media/'+key,name,folder,type).run();
+   return json({url:'/media/'+key},201);
   }
   if(path.startsWith('/media/')&&['GET','HEAD'].includes(req.method)){
    const key=path.slice(7);if(!/^[a-f0-9-]{36}\.[a-z0-9]{2,5}$/.test(key))fail(404,'Archivo no encontrado.');

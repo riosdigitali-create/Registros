@@ -38,7 +38,15 @@ npm run build
 npx wrangler deploy
 ```
 
-Para cambiar la contraseña de producción, ejecuta `node scripts/password.mjs` en una terminal interactiva. La entrada se oculta y solo se envía el hash a Cloudflare. Usa al menos 14 caracteres.
+Para cambiar la contraseña de producción, ejecuta `node scripts/password.mjs` en una terminal interactiva. La entrada se oculta y solo se envía el hash a Cloudflare. El script admite al menos 6 caracteres. Después de cambiarla se pueden revocar las sesiones activas desde D1.
+
+## Editar la página desde el panel
+
+La pestaña **Editar página** permite cambiar títulos, textos, servicios, redes, biografía, fotografías y pies de foto. Las flechas cambian el orden de las ocho secciones y el de las fotografías de portada o de cada proyecto. Los cambios se mantienen como borrador en la pestaña hasta pulsar **Guardar y publicar**; **Recargar página guardada** descarta cambios locales.
+
+**Elegir fotografía** abre la biblioteca: incluye los originales, las versiones optimizadas y las fotos ya subidas. **Subir fotografías** admite selección múltiple; **Subir una carpeta** conserva el nombre de la carpeta para buscar después sus imágenes. JPG, PNG, WebP, GIF y AVIF de hasta 25 MB por archivo. Las fotos subidas permanecen en R2 aunque se quiten de una sección. La bitácora conserva su editor independiente.
+
+La configuración pública se guarda en D1 (`sitio`), con control de revisión para evitar sobrescrituras entre pestañas. La biblioteca privada guarda nombres y carpetas en `biblioteca`; las escrituras requieren sesión y el mismo origen. `site-defaults.json` conserva el contenido inicial; no se debe regenerar para publicar cambios hechos desde el panel.
 
 ## Contenido e imágenes
 

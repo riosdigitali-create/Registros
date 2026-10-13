@@ -87,6 +87,8 @@ $$(".pestana[data-vista]").forEach(b => b.addEventListener("click", () => {
   const v = b.dataset.vista;
   $("#vistaMensajes").classList.toggle("oculto", v !== "mensajes");
   $("#vistaBitacora").classList.toggle("oculto", v !== "bitacora");
+  $("#vistaPagina").classList.toggle("oculto", v !== "pagina");
+  if(v==='pagina')window.cargarEditorPagina?.();
 }));
 
 /* ==========================================================

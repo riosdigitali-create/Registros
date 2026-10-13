@@ -3,8 +3,9 @@
    Lógica del sitio. No hace falta editar nada aquí:
    todo el contenido vive en contenido.js
    ============================================================ */
-(function(){
+(async function(){
 "use strict";
+await window.SITE_READY;
 
 const C = window.CONTENIDO || CONTENIDO;
 const $  = (s, r) => (r || document).querySelector(s);
@@ -57,7 +58,11 @@ function fechaLarga(iso){
    ========================================================== */
 (function hero(){
   const p = C.portada || {};
-  if(p.titulo)    $("#heroTitulo").innerHTML   = p.titulo;
+  if(p.titulo){
+   const title=$("#heroTitulo");title.replaceChildren();
+   const words=p.titulo.includes('<')?['Amar','Salvaje']:p.titulo.split('\n');
+   words.forEach((word,i)=>{const span=document.createElement('span');span.className='hero-word'+(i?' hero-word-last':'');span.textContent=word;title.append(span);});
+  }
   if(p.subtitulo) $("#heroSubtitulo").textContent = p.subtitulo;
   if(p.firma)     $("#heroFirma").textContent  = p.firma;
   if(p.boton)     $("#heroBoton").textContent  = p.boton + " →";
@@ -65,7 +70,8 @@ function fechaLarga(iso){
   const media = $("#heroMedia");
   const frames = p.fotogramas || [];
   if(frames.length && $("#heroFrames")){
-    media.innerHTML=frames.map((f,i)=>'<div class="hero-frame '+(i===0?'active':'')+'" style="background-image:url(\''+esc(safeMedia(f.imagen))+'\')"></div>').join('');
+    media.replaceChildren();frames.forEach((f,i)=>{const frame=document.createElement('div');frame.className='hero-frame '+(i===0?'active':'');frame.style.backgroundImage='url("'+encodeURI(safeMedia(f.imagen)).replace(/"/g,'%22')+'")';media.append(frame);});
+    $("#heroCaption").textContent='01 / '+frames[0].titulo;
     $("#heroFrames").innerHTML=frames.map((f,i)=>'<button type="button" class="frame-button" data-frame="'+i+'" aria-label="Mostrar fotografía: '+esc(f.titulo)+'" aria-pressed="'+(i===0)+'">0'+(i+1)+'</button>').join('');
     $("#heroFrames").addEventListener('click',event=>{
       const button=event.target.closest('[data-frame]');if(!button)return;
@@ -442,7 +448,7 @@ function abrirPost(i){
     '<div class="ph imgph" style="position:absolute;inset:0;border-radius:18px;overflow:hidden" data-falta="Falta el retrato">' +
     img(S.foto, "Retrato de Adriana A. Antequera Salas") + "</div>";
   const txt = $("#aboutTexto");
-  if(txt) txt.innerHTML = (S.parrafos || []).map(p => "<p>" + p + "</p>").join("");
+  if(txt) txt.innerHTML = (S.parrafos || []).map(p => "<p>" + esc(p.replace(/<[^>]*>/g,'')) + "</p>").join("");
 })();
 
 /* ==========================================================
@@ -665,6 +671,7 @@ new MutationObserver(() => document.querySelectorAll("form[data-form]").forEach(
 const progress = $(".reading-progress");
 function updateProgress(){const total=document.documentElement.scrollHeight-innerHeight; progress.style.width=(total>0?scrollY/total*100:0)+"%";}
 addEventListener("scroll", updateProgress, {passive:true});
+window.applySiteHeadings?.();
 // Keyboard focus remains inside an open modal or gallery.
 document.addEventListener("keydown", event => {
  if(event.key !== "Tab")return;

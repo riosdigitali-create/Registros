@@ -1,0 +1,414 @@
+{
+  "contenido": {
+    "contacto": {
+      "correo": "",
+      "whatsapp": "",
+      "whatsappTexto": "Hola Adriana, vengo de tu página web y me gustaría contarte mi historia.",
+      "instagram": "https://www.instagram.com/registro_de_un_amar_salvaje/",
+      "instagramUsuario": "@registro_de_un_amar_salvaje",
+      "instagramDAS": "https://www.instagram.com/decir_actuar_sentir/",
+      "instagramDASUsuario": "@decir_actuar_sentir",
+      "facebook": "",
+      "youtube": ""
+    },
+    "portada": {
+      "titulo": "Amar\nSalvaje",
+      "subtitulo": "Lo extraordinario no está en otra parte. Está aquí, en lo que pocos notan.",
+      "firma": "Por Adriana A. Antequera Salas",
+      "boton": "Cuéntame tu historia",
+      "imagen": "img/premium/proyecto-1-03-464a2bbc.webp",
+      "fotogramas": [
+        {
+          "imagen": "img/premium/proyecto-1-03-464a2bbc.webp",
+          "titulo": "El oficio de mirar"
+        },
+        {
+          "imagen": "img/premium/proyecto-2-02-693f86aa.webp",
+          "titulo": "Las manos que crean"
+        },
+        {
+          "imagen": "img/premium/portada-783a7f9f.webp",
+          "titulo": "Lo cotidiano, de cerca"
+        }
+      ],
+      "video": ""
+    },
+    "caminos": [
+      {
+        "id": "personales",
+        "icono": "❤️",
+        "titulo": "Historias personales",
+        "imagen": "img/premium/camino-personales-53665bd2.webp",
+        "descripcion": "Transformamos las fotografías y videos olvidados en tu celular en pequeñas piezas audiovisuales para recordar viajes, cumpleaños, familias, mascotas y momentos importantes.",
+        "lista": [
+          "Videos de viajes",
+          "Cumpleaños",
+          "Regalos audiovisuales",
+          "Bebés",
+          "Mascotas",
+          "Aniversarios",
+          "Selección y organización de recuerdos",
+          "Edición fotográfica para redes"
+        ],
+        "boton": "Conocer más",
+        "estilo": "",
+        "formTitulo": "Cuéntame qué quieres conservar",
+        "formIntro": "Unas pocas preguntas para entender tu historia antes de conversar.",
+        "preguntas": [
+          {
+            "campo": "ocasion",
+            "etiqueta": "¿Qué quieres conservar?",
+            "tipo": "select",
+            "opciones": [
+              "Un viaje",
+              "Un cumpleaños",
+              "Un regalo para alguien",
+              "Un bebé o embarazo",
+              "Una mascota",
+              "Un aniversario",
+              "Ordenar mis recuerdos",
+              "Otra cosa"
+            ]
+          },
+          {
+            "campo": "material",
+            "etiqueta": "¿Qué material tienes?",
+            "tipo": "select",
+            "opciones": [
+              "Fotos y videos en el celular",
+              "Fotos impresas o antiguas",
+              "Material de cámara profesional",
+              "Un poco de todo",
+              "Todavía no tengo nada"
+            ]
+          },
+          {
+            "campo": "fecha",
+            "etiqueta": "¿Para cuándo lo necesitas?",
+            "tipo": "text",
+            "placeholder": "Una fecha aproximada, o \"sin prisa\""
+          },
+          {
+            "campo": "historia",
+            "etiqueta": "Cuéntame la historia",
+            "tipo": "textarea",
+            "placeholder": "En pocas líneas: de quién es, qué momento es, por qué importa…"
+          }
+        ]
+      },
+      {
+        "id": "artisticos",
+        "icono": "🎬",
+        "titulo": "Proyectos artísticos y culturales",
+        "imagen": "img/premium/camino-artisticos-bc9de1f8.webp",
+        "descripcion": "Acompañamiento creativo y producción para artistas, cineastas, organizaciones y proyectos culturales.",
+        "lista": [
+          "Producción audiovisual",
+          "Videoclips",
+          "Documentales",
+          "Producción ejecutiva",
+          "Dirección de proyectos",
+          "Coordinación de equipos",
+          "Asesoría artística",
+          "Gestión de locaciones"
+        ],
+        "boton": "Conversemos",
+        "estilo": "artistic",
+        "formTitulo": "Hablemos de tu proyecto",
+        "formIntro": "Cuéntame en qué punto está y cómo puedo acompañarte.",
+        "preguntas": [
+          {
+            "campo": "tipo",
+            "etiqueta": "¿Qué tipo de proyecto es?",
+            "tipo": "select",
+            "opciones": [
+              "Documental",
+              "Videoclip",
+              "Cortometraje o largometraje",
+              "Contenido para una organización",
+              "Festival o ciclo de cine",
+              "Taller o formación",
+              "Otro"
+            ]
+          },
+          {
+            "campo": "etapa",
+            "etiqueta": "¿En qué etapa está?",
+            "tipo": "select",
+            "opciones": [
+              "Solo es una idea",
+              "En desarrollo / escritura",
+              "Buscando financiamiento",
+              "Listo para rodar",
+              "Ya rodado, falta postproducción",
+              "En distribución"
+            ]
+          },
+          {
+            "campo": "rol",
+            "etiqueta": "¿Qué necesitas de mí?",
+            "tipo": "select",
+            "opciones": [
+              "Producción ejecutiva",
+              "Dirección",
+              "Coordinación de equipo",
+              "Asesoría artística",
+              "Gestión de locaciones",
+              "Todavía no lo sé"
+            ]
+          },
+          {
+            "campo": "fechas",
+            "etiqueta": "Fechas y presupuesto aproximados",
+            "tipo": "text",
+            "placeholder": "Opcional — ayuda a saber si es viable"
+          },
+          {
+            "campo": "proyecto",
+            "etiqueta": "Cuéntame el proyecto",
+            "tipo": "textarea",
+            "placeholder": "De qué trata, quién está detrás, qué buscas lograr…"
+          }
+        ]
+      }
+    ],
+    "portafolio": [
+      {
+        "categoria": "Viaje · Familia",
+        "titulo": "El camino de vuelta a casa",
+        "resumen": "Un recorrido por la memoria de un viaje que no quería terminar.",
+        "proceso": "Del proceso: aprender a mirar lo que ya habíamos vivido.",
+        "video": "",
+        "fotos": [
+          {
+            "src": "img/premium/proyecto-1-01-b69bc8f1.webp",
+            "pie": "La carretera antes del amanecer."
+          },
+          {
+            "src": "img/premium/proyecto-1-02-9244ef30.webp",
+            "pie": "Lo que cabía en la ventanilla."
+          },
+          {
+            "src": "img/premium/proyecto-1-03-464a2bbc.webp",
+            "pie": "El último día, ya sin prisa."
+          }
+        ]
+      },
+      {
+        "categoria": "Documental · Cultura",
+        "titulo": "Oficios que no se apagan",
+        "resumen": "Manos que sostienen una tradición en medio del ruido de la ciudad.",
+        "proceso": "Del proceso: el tiempo como aliado, no como enemigo.",
+        "video": "",
+        "fotos": [
+          {
+            "src": "img/premium/proyecto-2-01-b0fca147.webp",
+            "pie": "El taller, a las seis de la mañana."
+          },
+          {
+            "src": "img/premium/proyecto-2-02-693f86aa.webp",
+            "pie": "Las manos que saben sin mirar."
+          }
+        ]
+      },
+      {
+        "categoria": "Música · Arte",
+        "titulo": "Canción para un río",
+        "resumen": "Un videoclip nacido entre el agua, la niebla y una voz.",
+        "proceso": "Del proceso: dejar que el paisaje también cantara.",
+        "video": "",
+        "fotos": [
+          {
+            "src": "img/premium/proyecto-3-01-c42cc898.webp",
+            "pie": "La niebla llegó puntual."
+          },
+          {
+            "src": "img/premium/proyecto-3-02-3cff0fbb.webp",
+            "pie": "Grabar con el agua como metrónomo."
+          }
+        ]
+      },
+      {
+        "categoria": "Cumpleaños · Regalo",
+        "titulo": "Cincuenta vueltas al sol",
+        "resumen": "Fotos de toda una vida, reunidas en cinco minutos de ternura.",
+        "proceso": "Del proceso: cada imagen guardaba una voz.",
+        "video": "",
+        "fotos": [
+          {
+            "src": "img/premium/proyecto-4-01-9980aaa9.webp",
+            "pie": "Cincuenta años en una caja de zapatos."
+          }
+        ]
+      },
+      {
+        "categoria": "Fotografía · Detalle",
+        "titulo": "Lo que cabe en una mañana",
+        "resumen": "Una serie sobre la luz que atraviesa lo cotidiano.",
+        "proceso": "Del proceso: mirar despacio hasta que aparece.",
+        "video": "",
+        "fotos": [
+          {
+            "src": "img/premium/proyecto-5-01-e3ca184b.webp",
+            "pie": "La luz de las siete."
+          },
+          {
+            "src": "img/premium/proyecto-5-02-a0cf16a4.webp",
+            "pie": "Un vaso, una sombra, nada más."
+          }
+        ]
+      },
+      {
+        "categoria": "Organización · Producción",
+        "titulo": "Un festival que camina",
+        "resumen": "La memoria de un ciclo de cine que llevó historias a otros pueblos.",
+        "proceso": "Del proceso: producir es también cuidar a la gente.",
+        "video": "",
+        "fotos": [
+          {
+            "src": "img/premium/proyecto-6-01-75cc5d1b.webp",
+            "pie": "La pantalla llegó en camioneta."
+          },
+          {
+            "src": "img/premium/proyecto-6-02-5874b36d.webp",
+            "pie": "El público, que siempre aparece."
+          }
+        ]
+      }
+    ],
+    "laboratorio": {
+      "items": [
+        {
+          "titulo": "Podcast",
+          "texto": "Conversaciones con gente de a pie. Personas extraordinarias con preguntas cotidianas, o personas comunes haciéndose preguntas profundas."
+        },
+        {
+          "titulo": "Entrevistas",
+          "texto": "Voces de quienes habitan el mundo y el oficio con una mirada distinta."
+        },
+        {
+          "titulo": "Ciclos de cine",
+          "texto": "Programación seleccionada y proyecciones de cine casero para encontrarnos a mirar juntos."
+        },
+        {
+          "titulo": "Talleres",
+          "texto": "Espacios de práctica, ensayo y reflexión alrededor del sonido, la fotografía, la imagen en movimiento y la palabra. Sin fórmulas, desde el hacer."
+        },
+        {
+          "titulo": "Formación",
+          "texto": "Acompañamiento cercano a quienes están empezando a buscar y dar forma a su propia voz."
+        },
+        {
+          "titulo": "Conversatorios",
+          "texto": "Encuentros abiertos para pensar juntos la época, lo que vemos y lo que nos atraviesa."
+        },
+        {
+          "titulo": "Asesorías",
+          "texto": "Guía y escucha atenta para proyectos visuales y narrativos en desarrollo."
+        },
+        {
+          "titulo": "Cine casero",
+          "texto": "Rescatar lo íntimo y volverlo relato."
+        }
+      ],
+      "proyectoLargo": {
+        "titulo": "Festival y ciclo de cine itinerante por América",
+        "texto": "Un proyecto a largo plazo para llevar historias de un lugar a otro, tejiendo comunidad alrededor de la imagen.",
+        "etiqueta": "Proyecto a largo plazo"
+      },
+      "materiales": [
+        {
+          "tipo": "pdf",
+          "titulo": "Programa DAS",
+          "descripcion": "El documento con las actividades del laboratorio.",
+          "archivo": "",
+          "etiqueta": "Descargar PDF"
+        },
+        {
+          "tipo": "imagen",
+          "titulo": "Cartel de la actividad",
+          "descripcion": "Cartel de Sentidos Emergentes.",
+          "archivo": "img/premium/cartel-das-bf52a652.webp",
+          "etiqueta": "Ver cartel"
+        }
+      ]
+    },
+    "sobreMi": {
+      "foto": "img/premium/adriana-d4bb4098.webp",
+      "parrafos": [
+        "No nací con esta certeza. Fue más bien un despertar de hace unos años, darme cuenta de todo lo que daba por sentado y de cuántas cosas ignoraba por ir demasiado rápido. Hoy, uno de mis aprendizajes más profundos y mi recordatorio diario es simple: lo extraordinario no está en otro lugar, está aquí, habitando lo cotidiano.",
+        "Soy Adriana. La música fue mi primer lenguaje, el sonido me movió antes de nacer y de ahí viene todo lo que escucho y veo. Pero hoy, que soy madre, entiendo que mi oficio principal es la pausa. Me detengo en el detalle, en la luz de una mañana, en los gestos pequeños que casi todos pasan por alto.",
+        "Trabajo entre la escritura, la fotografía, el cine y la producción audiovisual. Lo que busco es siempre lo mismo: conservar las historias que merecen permanecer antes de que el tiempo se las lleve.",
+        "No me interesa construir un escaparate ni un currículum perfecto. Prefiero un archivo vivo y austero, un cuaderno de viaje que también es galería y taller. Un lugar de encuentro donde tener la decencia y la calma de acompañar a personas y organizaciones a contar lo suyo sin artificios, con el cuidado que las cosas verdaderas exigen."
+      ]
+    }
+  },
+  "secciones": [
+    {
+      "id": "inicio",
+      "nombre": "Portada",
+      "titulo": "",
+      "intro": "",
+      "intro2": ""
+    },
+    {
+      "id": "portafolio",
+      "nombre": "Archivo fotográfico",
+      "titulo": "El archivo",
+      "intro": "Un recorrido entre la memoria, el paisaje y las personas. Abre cada historia para conocer sus imágenes y el proceso detrás de la mirada.",
+      "intro2": ""
+    },
+    {
+      "id": "servicios",
+      "nombre": "Servicios",
+      "titulo": "Lo íntimo.\nLo colectivo.",
+      "intro": "De una memoria íntima a un proyecto colectivo. Acompaño lo que quieres contar con la misma atención, desde la primera idea hasta su forma final.",
+      "intro2": ""
+    },
+    {
+      "id": "frase",
+      "nombre": "Una forma de mirar",
+      "titulo": "No es la cámara.\nEs la intención.",
+      "intro": "Hay registros que piden la distancia de un lente profesional y otros que nacen del impulso cotidiano de un teléfono. A ambos los trata el mismo respeto: sin artificios, con verdad.",
+      "intro2": ""
+    },
+    {
+      "id": "bitacora",
+      "nombre": "Bitácora",
+      "titulo": "Entre líneas.",
+      "intro": "Volcar la cabeza en la página para entender el desorden, mirar lo andado y hacer las paces con el tiempo. Un espacio para compartir mis tropiezos y aprendizajes sin pretender dar lecciones a nadie.",
+      "intro2": "Escribo con el solo deseo de comprender mi propio paso, regalar lo aprendido y confirmar —a quien quiera leer— la sospecha de que en este camino no estamos tan solos…"
+    },
+    {
+      "id": "laboratorio",
+      "nombre": "Laboratorio DAS",
+      "titulo": "DASDecir.\nActuar.\nSentir.",
+      "intro": "Decir para nombrar. Actuar para encarnar. Sentir para no perder la huella. DAS es mi espacio colectivo: un lugar donde nos reunimos a pensar juntos a través de entrevistas, talleres, proyecciones y conversaciones grabadas.",
+      "intro2": "Un laboratorio vivo para dejar de mirar a solas."
+    },
+    {
+      "id": "sobre-mi",
+      "nombre": "Sobre mí",
+      "titulo": "Adriana\nAntequera.",
+      "intro": "",
+      "intro2": ""
+    },
+    {
+      "id": "contacto",
+      "nombre": "Contacto",
+      "titulo": "Cuéntame\ntu historia.",
+      "intro": "Escríbeme y conversemos sobre lo que quieres conservar, contar o compartir.",
+      "intro2": ""
+    }
+  ],
+  "orden": [
+    "inicio",
+    "portafolio",
+    "servicios",
+    "frase",
+    "bitacora",
+    "laboratorio",
+    "sobre-mi",
+    "contacto"
+  ]
+}
